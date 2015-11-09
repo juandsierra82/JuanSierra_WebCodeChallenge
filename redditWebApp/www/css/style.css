@@ -26,7 +26,7 @@ p {
 input {
 	outline: none;
 }
-input[type=search] {
+input[type=text] {
 	-webkit-appearance: textfield;
 	-webkit-box-sizing: content-box;
 	font-family: inherit;
@@ -38,7 +38,7 @@ input::-webkit-search-cancel-button {
 }
 
 
-input[type=search] {
+input[type=text] {
 	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
@@ -52,7 +52,7 @@ input[type=search] {
 	-moz-transition: all .5s;
 	transition: all .5s;
 }
-input[type=search]:focus {
+input[type=text]:focus {
 	width: 200px;
 	background-color: #fff;
 	border-color: #66CC75;
@@ -70,30 +70,6 @@ input::-webkit-input-placeholder {
 	color: #999;
 }
 
-/* Demo 2 */
-#demo-2 input[type=search] {
-	width: 20px;
-	padding-left: 10px;
-	color: transparent;
-	cursor: pointer;
-}
-#demo-2 input[type=search]:hover {
-	background-color: #fff;
-}
-#demo-2 input[type=search]:focus {
-	width: 180px;
-	padding-left: 32px;
-	color: #000;
-	background-color: #fff;
-	cursor: auto;
-}
-#demo-2 input:-moz-placeholder {
-	color: transparent;
-}
-#demo-2 input::-webkit-input-placeholder {
-	color: transparent;
-}
-
 /* Icon Images rounding */
 
 .img-circle {
@@ -101,3 +77,8 @@ input::-webkit-input-placeholder {
 		width: 90px;
     border-radius: 45px;
 }
+
+span.data:before {
+	content: url(../images/icon-sprite.png);
+	height: 2px;
+};

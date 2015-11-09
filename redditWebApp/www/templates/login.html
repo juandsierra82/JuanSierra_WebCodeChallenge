@@ -1,24 +1,20 @@
 <ion-view view-title="Reddit" name="reddit-view">
   <ion-content class="padding">
- <h1>Expandable Search Form</h1>
-<form>
-  <input type="search" placeholder="Search">
-</form>
-<form id="demo-2">
-  <input type="search" placeholder="Search">
+<form name="searchForm">
+  <input name="input" ng-model="searchText" type="text" placeholder="funny">
+  <button class="button button-calm" type="submit" ng-click="submit(searchText)">Get JSON!</button>
+  <pre>search={{searchText}}</pre>
+  <p class="draggable" draggable>Hello</p>
+  <div class="droppable" droppable>World</div>
 </form>
 
-
-    <button class="button button-calm" ng-click="submit()">
-        Get JSON!
-    </button>
       <ion-item ng-repeat="post in posts">
-        <img ng-src='{{post.data.thumbnail}}' class="img-circle" onError="this.onerror=null;this.src='../images/unknown.png';">
-        <div class="author">{{post.data.author}}</div>
+        <img ng-src="{{post.data.thumbnail}}" alt="No Image"class="img-circle" onError="this.src='../images/unknown.png';">
+        <div class="author" >{{post.data.author}}</div>
         <div class="title">{{post.data.title}}</div>
-        <span class="comments">{{post.data.num_comments}}</span>
-        <span class="comments">{{post.data.ups}}</span>
-        <span class="comments">{{post.data.downs}}</span>
+        <span class="data">{{post.data.num_comments}}</span>
+        <span class="data">{{post.data.ups}}</span>
+        <span class="data">{{post.data.downs}}</span>
       </ion-item>
   </ion-content>
 </ion-view>

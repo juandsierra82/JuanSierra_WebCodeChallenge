@@ -2,11 +2,12 @@ angular.module('starter.services', [])
 
 .factory('jsonReq', function ($http){
 	return {
-		getJSON: function(){
+		getJSON: function (searchString){
 			console.log('in jsonReq factory calling function');
+			searchString = searchString.toLowerCase();
 			return $http({
 				method: 'GET',
-				url: 'https://www.reddit.com/r/funny/.json'
+				url: 'https://www.reddit.com/r/'+searchString+'/.json'
 			})
 			.then(function (res){
 				return res.data
@@ -14,3 +15,4 @@ angular.module('starter.services', [])
 		}
 	}
 })
+
