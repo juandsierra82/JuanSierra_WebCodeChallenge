@@ -6,3 +6,5 @@
 .DS_Store
 .editorconfig
 .yo-rc.json
+.gitattributes
+/www/lib
