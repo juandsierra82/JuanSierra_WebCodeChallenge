@@ -36,14 +36,14 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
       controller: 'MainCtrl'
   })
 
-  .state('login', {
-      url: '/login',
-      templateUrl: 'templates/login.html',
+  .state('reddit', {
+      url: '/reddit',
+      templateUrl: 'templates/reddit.html',
       controller: 'RedditCtrl'
   })
 
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/login');
+  $urlRouterProvider.otherwise('/reddit');
 
 })

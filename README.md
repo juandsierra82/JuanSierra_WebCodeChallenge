@@ -1,5 +1,10 @@
 # juan-sierra-web-code-challenge
 
+## To Deploy:
+
+run  nodemon index.js in the command line running node
+
+go to localhost:3000/ and the app should run in page load.
 
 ## Build & development
 
