@@ -2,9 +2,16 @@
 
 ## To Deploy:
 
+npm install and bower install:
+
+client dependencies angular, jquery, ionic
+server morgan, nodemon, express, bodyparser
+
 run  nodemon index.js in the command line running node
 
-go to localhost:3000/ and the app should run in page load.
+go to localhost:8000/ and the app should run in page load.
+
+Alternatively, you may load the views directly from redditWebApp/www/index.html
 
 ## Build & development
 
